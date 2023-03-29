@@ -51,13 +51,6 @@ class Menu extends Phaser.Scene {
 
    }
    update() {
-      this.button.on("pointerdown", () => {
-         this.start = true;
-      });
-
-      this.howButton.on("pointerdown", () => {
-         this.howStart = true;
-      });
       
       if (this.start == true) {
          this.scene.start('world1Scene');
@@ -67,6 +60,14 @@ class Menu extends Phaser.Scene {
          this.scene.start('tutorialScene');
          this.howStart = false;
       }
+      
+      this.button.on("pointerdown", () => {
+         this.start = true;
+      });
+
+      this.howButton.on("pointerdown", () => {
+         this.howStart = true;
+      });
    }
 
 }
