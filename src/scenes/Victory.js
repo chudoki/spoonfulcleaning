@@ -3,8 +3,6 @@ class Victory extends Phaser.Scene {
         super("VictoryScene");
     }
     preload() {
-        // this.load.image('bg', 'assets/bg.png');
-        //this.load.image('sussybaka', 'assets/amogus.png');
         this.load.image('egbg', 'assets/EndgameBg.png');
     }
 
@@ -31,7 +29,7 @@ class Victory extends Phaser.Scene {
         if (score / 22 <= .3)
             rank = 'good job';
         if (score / 22 >= .4)
-            rank = 'very well done';
+            rank = 'well done';
         if (score / 22 >= .6)
             rank = 'you slayed';
         if (score / 22 >= .8)
